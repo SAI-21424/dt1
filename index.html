@@ -1,0 +1,383 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Computing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <a href="#home" class="logo">☁ CloudSphere</a>
+
+        <button class="menu-btn" id="menuBtn">☰</button>
+
+        <nav id="navbar">
+            <a href="#home">Home</a>
+            <a href="#basics">Basics</a>
+            <a href="#models">Service Models</a>
+            <a href="#architecture">Architecture</a>
+            <a href="#applications">Applications</a>
+            <a href="#quiz">Quiz</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <p class="tag">DIGITAL TECHNOLOGY | CSE AIML</p>
+            <h1>Overview of
+                <span>Cloud Computing</span>
+            </h1>
+
+            <p>
+                Cloud computing provides storage, processing power,
+                databases and applications through the Internet.
+                Access technology whenever and wherever you need it.
+            </p>
+
+            <a href="#basics" class="btn">Explore Cloud →</a>
+        </div>
+
+        <div class="hero-cloud">
+            <div class="cloud">☁</div>
+            <h2>THE CLOUD</h2>
+            <p>Compute • Store • Connect</p>
+        </div>
+    </section>
+
+    <section class="section" id="basics">
+        <p class="tag">01 — CLOUD BASICS</p>
+        <h2>What Is Cloud Computing?</h2>
+
+        <p class="description">
+            Cloud computing delivers computing resources over the
+            Internet instead of requiring users to manage physical
+            servers themselves.
+        </p>
+
+        <div class="grid">
+            <article class="card">
+                <span>📁</span>
+                <h3>Cloud Storage</h3>
+                <p>Google Drive stores files online and makes them accessible.</p>
+            </article>
+
+            <article class="card">
+                <span>✉️</span>
+                <h3>Email Services</h3>
+                <p>Gmail allows users to access email from different devices.</p>
+            </article>
+
+            <article class="card">
+                <span>🎬</span>
+                <h3>Entertainment</h3>
+                <p>Netflix streams movies using cloud infrastructure.</p>
+            </article>
+        </div>
+    </section>
+
+    <section class="section" id="why">
+        <p class="tag">02 — WHY CLOUD?</p>
+        <h2>Traditional IT vs Cloud IT</h2>
+
+        <div class="grid">
+            <article class="card">
+                <h3>🖥️ Traditional IT</h3>
+                <ul>
+                    <li>Physical servers and hardware</li>
+                    <li>High initial costs</li>
+                    <li>Limited scaling flexibility</li>
+                    <li>Manual maintenance</li>
+                    <li>Local access limitations</li>
+                </ul>
+            </article>
+
+            <article class="card">
+                <h3>☁️ Cloud IT</h3>
+                <ul>
+                    <li>Virtual infrastructure</li>
+                    <li>Pay-as-you-use pricing</li>
+                    <li>Flexible scaling</li>
+                    <li>Provider-managed infrastructure</li>
+                    <li>Access from different locations</li>
+                </ul>
+            </article>
+        </div>
+    </section>
+
+    <section class="section">
+        <p class="tag">03 — HOW IT WORKS</p>
+        <h2>How Does the Cloud Work?</h2>
+
+        <div class="grid">
+            <article class="card">
+                <h3>01. Access</h3>
+                <p>The user sends a request using a website or application.</p>
+            </article>
+
+            <article class="card">
+                <h3>02. Cloud Engine</h3>
+                <p>Cloud servers process the request and access required data.</p>
+            </article>
+
+            <article class="card">
+                <h3>03. Result</h3>
+                <p>The processed result returns to the user's device.</p>
+            </article>
+        </div>
+    </section>
+
+    <section class="section">
+        <p class="tag">04 — CHARACTERISTICS</p>
+        <h2>Four Key Characteristics</h2>
+
+        <div class="grid">
+            <article class="card">
+                <h3>⚡ On-Demand</h3>
+                <p>Resources are available when needed.</p>
+            </article>
+
+            <article class="card">
+                <h3>🌐 Network Access</h3>
+                <p>Access cloud services through the Internet.</p>
+            </article>
+
+            <article class="card">
+                <h3>▦ Resource Pooling</h3>
+                <p>Infrastructure resources are shared among customers.</p>
+            </article>
+
+            <article class="card">
+                <h3>↕ Elasticity</h3>
+                <p>Resources can increase or decrease based on demand.</p>
+            </article>
+        </div>
+    </section>
+
+    <section class="section" id="models">
+        <p class="tag">05 — SERVICE MODELS</p>
+        <h2>Explore the Cloud Service Models</h2>
+        <p class="description">Click a model to learn more.</p>
+
+        <div class="grid">
+            <button class="model-card active" data-model="iaas">
+                <span>🖥️</span>
+                <h3>IaaS</h3>
+                <p>Infrastructure as a Service</p>
+                <small>AWS EC2 • Azure VMs</small>
+            </button>
+
+            <button class="model-card" data-model="paas">
+                <span>🛠️</span>
+                <h3>PaaS</h3>
+                <p>Platform as a Service</p>
+                <small>Heroku • Google App Engine</small>
+            </button>
+
+            <button class="model-card" data-model="saas">
+                <span>💻</span>
+                <h3>SaaS</h3>
+                <p>Software as a Service</p>
+                <small>Gmail • Microsoft 365</small>
+            </button>
+        </div>
+
+        <div class="model-detail" id="modelDetail">
+            <h3>IaaS — Infrastructure as a Service</h3>
+            <p>
+                Rent virtual machines, storage and networking.
+                Users manage the operating system and applications,
+                while the provider manages physical infrastructure.
+            </p>
+        </div>
+    </section>
+
+    <section class="section">
+        <p class="tag">06 — DEPLOYMENT MODELS</p>
+        <h2>Types of Cloud Deployment</h2>
+
+        <div class="grid">
+            <article class="card">
+                <h3>🌐 Public Cloud</h3>
+                <p>Cloud services provided over the Internet to multiple customers.</p>
+            </article>
+
+            <article class="card">
+                <h3>🔒 Private Cloud</h3>
+                <p>Cloud infrastructure dedicated to one organization.</p>
+            </article>
+
+            <article class="card">
+                <h3>🔄 Hybrid Cloud</h3>
+                <p>A combination of public and private cloud environments.</p>
+            </article>
+
+            <article class="card">
+                <h3>🤝 Community Cloud</h3>
+                <p>Infrastructure shared by organizations with common needs.</p>
+            </article>
+        </div>
+    </section>
+
+    <section class="section" id="architecture">
+        <p class="tag">07 — SYSTEM DESIGN</p>
+        <h2>Cloud Computing Architecture</h2>
+
+        <div class="architecture">
+            <div class="architecture-box">
+                <h3>👥 FRONT END</h3>
+                <p>Users • Mobile • Laptop • Browser</p>
+            </div>
+
+            <div class="connection">↕ Internet / Network ↕</div>
+
+            <div class="architecture-box">
+                <h3>☁️ BACK END</h3>
+                <p>Cloud platform • Compute • Storage • Database</p>
+            </div>
+
+            <div class="architecture-box">
+                <h3>🔐 INFRASTRUCTURE</h3>
+                <p>Virtualization • Networking • Security</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="applications">
+        <p class="tag">08 — REAL-WORLD IMPACT</p>
+        <h2>Applications of Cloud Computing</h2>
+
+        <div class="grid">
+            <article class="card">
+                <span>🎓</span>
+                <h3>Education</h3>
+                <p>Online learning and virtual labs.</p>
+            </article>
+
+            <article class="card">
+                <span>🏥</span>
+                <h3>Healthcare</h3>
+                <p>Patient records and telemedicine.</p>
+            </article>
+
+            <article class="card">
+                <span>💼</span>
+                <h3>Business</h3>
+                <p>Collaboration tools and business applications.</p>
+            </article>
+
+            <article class="card">
+                <span>🤖</span>
+                <h3>AI / ML</h3>
+                <p>Training and deploying machine learning models.</p>
+            </article>
+
+            <article class="card">
+                <span>🛒</span>
+                <h3>E-Commerce</h3>
+                <p>Online stores and scalable shopping platforms.</p>
+            </article>
+
+            <article class="card">
+                <span>💾</span>
+                <h3>Backup</h3>
+                <p>Online file storage and disaster recovery.</p>
+            </article>
+        </div>
+    </section>
+
+    <section class="section">
+        <p class="tag">09 — THE BALANCE</p>
+        <h2>Advantages and Challenges</h2>
+
+        <div class="grid">
+            <article class="card">
+                <h3>✅ Advantages</h3>
+                <ul>
+                    <li>Cost efficiency</li>
+                    <li>Scalability</li>
+                    <li>Remote access</li>
+                    <li>Backup and recovery</li>
+                </ul>
+            </article>
+
+            <article class="card">
+                <h3>⚠️ Challenges</h3>
+                <ul>
+                    <li>Security and privacy risks</li>
+                    <li>Internet dependency</li>
+                    <li>Provider outages</li>
+                    <li>Vendor lock-in</li>
+                </ul>
+            </article>
+        </div>
+    </section>
+
+    <section class="section">
+        <p class="tag">10 — WHAT'S NEXT</p>
+        <h2>Future of Cloud Computing</h2>
+
+        <div class="grid">
+            <article class="card">
+                <h3>🤖 Cloud + AI/ML</h3>
+                <p>Intelligent systems running at scale.</p>
+            </article>
+
+            <article class="card">
+                <h3>📡 Edge Computing</h3>
+                <p>Processing data close to where it is created.</p>
+            </article>
+
+            <article class="card">
+                <h3>⚙️ Serverless</h3>
+                <p>Running code without managing servers directly.</p>
+            </article>
+
+            <article class="card">
+                <h3>🌍 Multi-Cloud</h3>
+                <p>Using multiple cloud providers.</p>
+            </article>
+        </div>
+    </section>
+
+    <section class="section" id="quiz">
+        <p class="tag">KNOWLEDGE CHECK</p>
+        <h2>Test Your Cloud Knowledge</h2>
+
+        <div class="quiz-box">
+            <h3 id="question">Which model provides ready-to-use software?</h3>
+
+            <div id="options">
+                <button class="answer" data-answer="0">IaaS</button>
+                <button class="answer" data-answer="1">PaaS</button>
+                <button class="answer" data-answer="2">SaaS</button>
+                <button class="answer" data-answer="3">Private Cloud</button>
+            </div>
+
+            <p id="feedback" aria-live="polite"></p>
+            <button id="nextQuestion" class="btn" disabled>Check Answer →</button>
+        </div>
+    </section>
+
+    <section class="section conclusion">
+        <p class="tag">CONCLUSION</p>
+        <h2>Cloud Computing Powers Our Digital World</h2>
+        <p>
+            Cloud computing delivers on-demand resources, supports modern
+            applications, and helps organizations build flexible digital services.
+        </p>
+        <a href="#home" class="btn">Back to Top ↑</a>
+    </section>
+
+    <footer>
+        <a href="#home" class="logo">☁ CloudSphere</a>
+        <p>Cloud Computing | Digital Technology | CSE / AIML</p>
+        <p>Student Learning Project</p>
+    </footer>
+
+    <button id="backTop" aria-label="Back to top">↑</button>
+    <script src="script.js"></script>
+</body>
+</html>
